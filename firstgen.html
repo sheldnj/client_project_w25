@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>First Generation Students</title>
 </head>
 <body>
 
     <header>
-        <a href = "">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_U_blue.png" alt="UMSI Logo">
-        <nav>
+        <a class = "skip" href = "#main">Skip to Main Content</a> <!--skip to header-->
+        <nav class = "topnav">
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "firstgen.html">First Generation Students</a></li>
+                <li><a href = "firstgen.html" class = "active">First Generation Students</a></li>
                 <li><a href = "caps.html">CAPS</a></li>
                 <li><a href = "pantry.html">Food Pantry</a></li>
             </ul>
         </nav>
+        <div class = "firstimg">
+            <img src="images/UMSI_signature_vertical_U_blue.png" alt="UMSI Logo 2">
+        </div>
         <h1>Navigating Your Journey as a First-Generation Student</h1>
 
     </header>
-    <main>
+    <main class = "container" id = "main">
         <section>
             <h2>What is the First-Generation Student Program?</h2>
             <p>The First-Generation Student Program is a student organization that was founeded in 2007 with the mission to increase accessibility to resources for first-generation students and to build community among the population. The students advocated for  enhanced campus support for themselves and peers that are also first gen. Our goal is to empower students through resources, community building, mentorship, and advocacy to ensure your success at the University of Michigan. </p>
@@ -76,7 +80,7 @@
     
     </main>
     <footer>
-        <h3>Connect with us on social media</h3>
+        <h3 class = "media">Connect with us on social media</h3>
             <ul>
                 <li>Follow us on Instagram @umfirstgen</li>
                 <li><a href = "https://www.facebook.com/firstgens/">First Gen Facebook link</a> </li>

@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Food Pantry</title>
 </head>
 <body>
 
     <header>
-        <a href = "">Skip to Main Content</a>
-        <img src="images/Cupboardlogo.jpg" alt="Maize and Blue Cupboard logo">
-        <nav>
+        <a class = "skip" href = "#main">Skip to Main Content</a> <!--skip to header-->
+        <nav class = "topnav">
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "firstgen.html">First Generation Students</a></li>
                 <li><a href = "caps.html">CAPS</a></li>
-                <li><a href = "pantry.html">Food Pantry</a></li>
+                <li><a href = "pantry.html" class = "active">Food Pantry</a></li>
             </ul>
         </nav>
+        <div class = "firstimg">
+            <img src="images/Cupboardlogo.jpg" alt="Maize and Blue Cupboard logo">
+        </div>
         <h1>Welcome to the Maize and Blue Cupboard at the University of Michigan Empowering Students Through Food Security</h1>
 
     </header>
-    <main>
+    <main class = "container" id = "main">
         <section>
             <p>At the University of Michigan, we believe that no student should ever have to choose between essentials and their education. The Maize and Blue Cupboard is here to ensure that all students have access to healthy, nutritious food and the resources they need to thrive academically and personally.</p>
             <h2>What is the Maize and Blue Cupboard?</h2>
@@ -63,7 +67,7 @@
                 <li>Visit Us: The Maize and Blue Cupboard is located at 420 S State St, Ann Arbor, MI 48109. Our regular hours are Mon-Thurs from 3pm-7pm and Friday from 12pm-7pm. All you need is your MCard to access our services.</li>
                 <li>No Cost and No Questions: The Cupboard operates under a no-cost policy for students and does not require proof of need. We respect your privacy and are here to support everyone who visits.</li>
                 <li>Online Orders: For those who prefer to pre-select items, use our online ordering system to reserve your food and essentials. Orders can be picked up on designated days.</li>
-            </ul>>
+            </ul>
         </section>
 
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of content to help University of Michigan students navigate and learn more about Maize and Blue cupboard also known as food pantry"
@@ -71,7 +75,7 @@
 
     </main>
     <footer>
-        <h3>Connect with us on social media</h3>
+        <h3 class = "media">Connect with us on social media</h3>
         <ul>
             <li>Follow us on Instagram @maizeandbluecupboard</li>
             <li><a href = "https://www.facebook.com/maizeandbluecupboard/">First Gen Facebook link</a> </li>
