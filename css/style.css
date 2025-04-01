@@ -125,8 +125,8 @@ footer a:hover {
 }
 
 .error{
-    background-image: url("../images/Wall-Crack-PNG-Transparent-Image.png");
-    background-size: 75% 58%;
+    /* background-image: url("../images/Wall-Crack-PNG-Transparent-Image.png");
+    background-size: 75% 58%; */
     background-color: #FFCB05;
     font-family: Arial, sans-serif;
     display: flex;
