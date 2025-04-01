@@ -36,6 +36,10 @@
                 <li>Life Outside Classroom</li>
                 <li>Contact</li>
             </ol>
+            <figure>
+                <img src="images/MCOMMONS-WinterSemester2025-41.jpg" alt="Student studying at library">
+                <figcaption>University of Michigan library</figcaption>
+            </figure>
         </section>
         <section>
             <h2>Physical Health</h2>
@@ -97,9 +101,63 @@
         </section>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
+        <div class = "popup" id = "popup">
+            <div class = "popup-content">
+                <div class = "popheader">
+                    <strong>Join our Newsletter</strong> 
+                    <button class = "closebtn" onclick="closePopup()">&times;</button>
+                </div>
+                <form action = "https://formspree.io/f/xldjwkpw" method = "POST">
+                    <label for = "email_id">Your Email</label>
+                    <input type = "email" name = "email" id = "email_id">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            function closePopup(){
+                document.getElementById("popup").style.display = "none";
+            }
+            function openPopup() {
+                document.getElementById("popup").style.display = "flex";
+            }
+            setTimeout(openPopup, 5000);
+        </script>
+        
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <div class = "footer-container">
+            <div class = "media">
+                <h3>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></h3>
+            </div>
+            <div class = "media">
+                <h3>First Gen Social!</h3>
+                <ul>
+                    <li>Follow us on Instagram @umfirstgen</li>
+                    <li><a href = "https://www.facebook.com/firstgens/">First Gen Facebook link</a> </li>
+                </ul>
+            <p>First Generation Program | <a href="https://firstgen.umich.edu/">First Gen Website </a></p>
+            </div>
+            <div class = "media">
+                <h3>CAPS Social!</h3>
+                <ul>
+                    <li>Follow us on Instagram @umichcaps</li>
+                </ul>
+            <p>CAPS | <a href="https://caps.umich.edu/">CAPS Website </a></p>
+            </div>
+            <div class = "media">
+                <h3>Food Pantry Social!</h3>
+                <ul>
+                    <li>Follow us on Instagram @maizeandbluecupboard</li>
+                    <li><a href = "https://www.facebook.com/maizeandbluecupboard/">First Gen Facebook link</a> </li>
+                </ul>
+                <p>Maize and Blue Cupboard | <a href="https://mbc.studentlife.umich.edu/">Maize and Blue Cupboard Website </a></p>
+            </div>
+        </div>
+        <p>© Copyrights <span id="year"></span> by the University of Michigan. All rights reserved.</p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>
